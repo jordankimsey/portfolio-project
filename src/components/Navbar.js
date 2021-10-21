@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
+import logo from './images/logo-crop.jpg';
 
 
 
@@ -8,7 +9,7 @@ const Navbar = () => {
       <nav className='navbar navbar-expand-lg navbar-light bg-custom'>
         <div className='container-fluid'>
           <a className='navbar-brand' href='#'>
-            <img src='/assets/images/logo-crop.jpg' alt='Isaac Kimsey logo' />
+            <img src={logo} alt='Isaac Kimsey logo' />
           </a>
           <button
             className='navbar-toggler'
