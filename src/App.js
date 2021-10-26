@@ -4,12 +4,17 @@ import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 import Particles from 'react-particles-js';
+import About from './components/About';
+import Fade from 'react-reveal/Fade';
+import Tech from './components/Tech';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Particles
-        className="particles"
+        className='particles'
         params={{
           particles: {
             number: {
@@ -31,6 +36,12 @@ function App() {
       />
       <Navbar />
       <Header />
+      <Fade right>
+        <About />
+        <Tech />
+        <ContactForm />
+        <Footer />
+      </Fade>
     </>
   );
 }
