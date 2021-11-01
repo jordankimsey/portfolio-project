@@ -97,6 +97,11 @@ nav ul li a {
   z-index: 1;
 }
 
+.main-info h1 {
+  font-size: 70px;
+  
+}
+
 .overlay {
    position: absolute;
    top: 0;
@@ -145,10 +150,10 @@ nav ul li a {
     display: none;
   } */
   .main-info h1 {
-    font-size: 1.7rem !important;
+    font-size: 3rem !important;
   }
   .typed-text {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -169,8 +174,8 @@ nav ul li a {
 
 .skills-images div:hover{
   /* add bounce animation */
-  animation: bounce 0.5s ease-in-out;
-  -webkit-animation: bounce 0.3s ease-in-out;
+  animation: bounce 0.34s ease-in-out;
+  -webkit-animation: bounce 0.34s ease-in-out;
 }
 
 @keyframes bounce {
@@ -238,9 +243,6 @@ nav ul li a {
     flex-direction: row;
     align-items: center;
   }
-  .skills-images{
-    
-  }
 }
 
 .about-container {
@@ -304,6 +306,7 @@ nav ul li a {
 .tech-container {
   height: 70vh;
   padding-top: 2rem;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   background-color: rgb(24,	39,	76);
@@ -317,15 +320,19 @@ nav ul li a {
 }
 
 /******* contact form ******/
-.container h2 {
+.contactHeader h2 {
   position: relative;
   margin: 40px 0px;
   padding-bottom: 20px;
   text-align: left;
   color: rgb(24,	39,	76);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container h2:after {
+.contactHeader h2:after {
+  text-align: center;
   content: '';
   position: absolute;
   width: 75px;
@@ -349,15 +356,73 @@ nav ul li a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 200px;
+  height: 170px;
 }
 
-.social a {
-  height: 500px;
+.social-media div {
+padding: 15px;  
 }
+
+.social-media div a svg:hover {
+  animation: bounce 0.34s ease-in-out;
+  -webkit-animation: bounce 0.34s ease-in-out;
+}
+
+
+
+@media(min-width: 997px) {
+.container {
+  padding-bottom: 20px;
+  
+}
+
+#connect {
+display: flex;
+  flex-direction: row-reverse;
+}
+
+.contact-info {
+  padding: 70px;
+  justify-content: center;
+}
+
+  .social-media {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .social {
+    padding-bottom: 20px;
+  }
+}
+
 
 .footer-container {
-  height: 20vh;
+  height: 10vh;
   background-color: rgb(24, 39, 76);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info .contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-container h4 {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.tech-container {
+  text-align: center;
 }
